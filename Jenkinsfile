@@ -7,9 +7,13 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
-            steps {
-                git 'https://github.com/keerthanamr08/exp1.git'
+       
+stage('Clone Repository') {
+    steps {
+        git branch: 'main',
+            url: 'https://github.com/keerthanamr08/exp1.git'
+    }
+}
             }
         }
 
